@@ -1,13 +1,18 @@
-name: My First Workflow
+name: Linux commands
 
 on:
     push:
 
 jobs:
-    hello:
+    commands:
         runs-on: ubuntu-latest
 
         steps:
-            - name: print Message
-              run: echo "Hello action"
+            - run: pwd
+
+            - run: ls -la
+
+            - run: date
+
+            - run: whoami
 
